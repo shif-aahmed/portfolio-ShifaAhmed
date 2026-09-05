@@ -1,0 +1,89 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 40px;
+
+  background: rgba(11, 15, 25, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(56, 189, 248, 0.1);
+}
+
+/* LOGO */
+.logo {
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100%;
+  object-fit: contain;
+}
+
+/* LINKS CONTAINER */
+.links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+/* LINKS */
+.links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* hover underline animation */
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.links a:hover {
+  color: #38bdf8;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE STATE (optional later JS scroll logic) */
+.links a.active {
+  color: #38bdf8;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .links {
+    gap: 15px;
+    font-size: 13px;
+  }
+}
+.links a.active {
+  color: #38bdf8;
+}
+
+.links a.active::after {
+  width: 100%;
+}

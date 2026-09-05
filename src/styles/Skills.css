@@ -1,0 +1,35 @@
+.skills {
+  padding: 120px 20px;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: 50px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.skill-box {
+  padding: 18px;
+  background: #1e293b;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  transition: transform 0.25s ease, border 0.25s ease;
+  border: 1px solid #1e293b;
+}
+
+/* ONLY CSS hover (no framer hover = no flicker) */
+.skill-box:hover {
+  transform: translateY(-5px);
+  border: 1px solid #38bdf8;
+}
