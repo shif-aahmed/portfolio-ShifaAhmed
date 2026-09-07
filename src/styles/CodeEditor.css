@@ -1,0 +1,162 @@
+.code-editor {
+  width: 100%;
+  max-width: 440px;
+  border-radius: var(--radius-lg);
+  background: #0d1117;
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+
+/* Header */
+.ce-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: #161b22;
+  border-bottom: 1px solid var(--border-card);
+}
+
+.ce-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.ce-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.ce-dot--red {
+  background: #ff5f57;
+}
+
+.ce-dot--yellow {
+  background: #febc2e;
+}
+
+.ce-dot--green {
+  background: #28c840;
+}
+
+.ce-tab {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  padding: 2px 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius-sm);
+}
+
+.ce-spacer {
+  flex: 1;
+}
+
+/* Body */
+.ce-body {
+  display: flex;
+  padding: 16px 0;
+  min-height: 240px;
+}
+
+.ce-lines {
+  display: flex;
+  flex-direction: column;
+  padding: 0 14px;
+  border-right: 1px solid var(--border-card);
+  user-select: none;
+}
+
+.ce-line-num {
+  color: var(--text-tertiary);
+  font-size: 0.72rem;
+  line-height: 1.7;
+  opacity: 0;
+  transition: opacity 0.3s var(--ease-out);
+}
+
+.ce-line-num.ce-visible {
+  opacity: 1;
+}
+
+.ce-code {
+  flex: 1;
+  padding: 0 16px;
+  overflow: hidden;
+}
+
+.ce-line {
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity 0.35s var(--ease-out), transform 0.35s var(--ease-out);
+}
+
+.ce-line.ce-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Syntax Colors */
+.ce-keyword {
+  color: #ff7b72;
+}
+
+.ce-string {
+  color: #a5d6ff;
+}
+
+.ce-variable {
+  color: #d2a8ff;
+}
+
+.ce-property {
+  color: #79c0ff;
+}
+
+/* Cursor */
+.ce-cursor {
+  color: var(--accent);
+  animation: ce-blink 1s step-end infinite;
+  font-weight: 300;
+  margin-left: 1px;
+}
+
+@keyframes ce-blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Footer */
+.ce-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 16px;
+  background: #161b22;
+  border-top: 1px solid var(--border-card);
+  font-size: 0.65rem;
+  color: var(--text-tertiary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .code-editor {
+    max-width: 100%;
+    font-size: 0.75rem;
+  }
+
+  .ce-body {
+    min-height: 200px;
+  }
+}

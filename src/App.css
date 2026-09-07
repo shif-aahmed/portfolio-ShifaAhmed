@@ -1,32 +1,17 @@
-
-html {
-  scroll-behavior: smooth;
-  height: 100% ;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-    background: rgb(0, 8, 27)!important;
-
+.edu-contact-section {
+  padding: 36px 0 20px;
 }
 
-body {
-    height: 100% ;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(180deg, #0f172a, #020617);
-  color: #e2e8f0;
+.edu-contact-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+  align-items: stretch;
 }
 
-
-.app header {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.app header h1 {
-  font-size: 2.5rem;
+@media (max-width: 900px) {
+  .edu-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
