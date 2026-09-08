@@ -47,7 +47,7 @@ const Experience = () => {
                 <div className="experience-card__meta">
                   <h3 className="experience-card__role">{item.role}</h3>
                   <p className="experience-card__company">
-                    {item.company} &nbsp;•&nbsp; {item.period}
+                    {item.company} &nbsp;•&nbsp; {item.period} &nbsp;•&nbsp; {item.workType}
                   </p>
                 </div>
               </div>
