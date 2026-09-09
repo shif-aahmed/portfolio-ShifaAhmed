@@ -3,7 +3,7 @@ import exampleImg from "../assets/example.png";
 import worldcontech from "../assets/worldcontech.png";
 import kyakhao from "../assets/kyakhao.png";
 import vertexai from "../assets/vertexai.png";
-import spinWheel from "../assets/spinWheel.png";
+import spinwheel from "../assets/spinwheel.png";
 
 import aetherionCoin from "../assets/aetherionCoin.png";
 
@@ -41,7 +41,7 @@ const projects = [
     title: "Spin Wheel",
     description: "A responsive React.js spin wheel application with name management, file import, saved lists, and random winner selection, designed with CSS for a smooth experience across desktop and mobile devices.",
     techStack: "React.js, CSS3, JavaScript, HTML5",
-    image: spinWheel,
+    image: spinwheel,
     live: "https://spin-wheel-gray.vercel.app/",
     github: "https://github.com/shif-aahmed/spinWheel",
   },
