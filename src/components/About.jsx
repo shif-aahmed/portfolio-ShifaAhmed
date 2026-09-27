@@ -7,11 +7,11 @@ const dotColors = {
   react: "#61dafb", nextjs: "#ffffff", angular: "#dd0031",
   javascript: "#f7df1e", typescript: "#3178c6", html5: "#e34f26",
   css3: "#1572b6", tailwind: "#06b6d4", nodejs: "#339933",
-  express: "#ffffff", api: "#38bdf8", firebase: "#ffca28",
+  express: "#ffffff", api: "#38bdf8", postgresql: "#ffca28",
   auth: "#38bdf8", mongodb: "#47a248", mysql: "#4479a1",
   sqlserver: "#cc2927", git: "#f05032", github: "#ffffff",
-  postman: "#ff6c37", vite: "#646cff", vscode: "#007acc",
-  figma: "#f24e1e",
+  postman: "#ff6c37", vercel: "#646cff", vscode: "#007acc",
+  nestjs: "#f24e1e",
 };
 
 const About = () => {
@@ -45,7 +45,7 @@ const About = () => {
 
               <p>
                 My experience spans frontend and backend development, including
-                React.js, Node.js, Express.js, REST APIs, databases, and Firebase.
+                React.js, Node.js, Express.js, REST APIs, databases, and NestJs.
               </p>
 
               <p className="about-card__highlight">
