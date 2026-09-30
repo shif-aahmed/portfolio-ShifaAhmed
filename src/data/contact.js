@@ -6,7 +6,7 @@ const contact = {
   linkedin: "https://www.linkedin.com/in/shifaahmed-webdeveloper",
   linkedinDisplay: "www.linkedin.com/in/shifaahmed-webdeveloper",
   whatsapp: "https://wa.me/923330359970",
-  resume: "/shifa_ahmed_resume.pdf"
+  resume: "/shifa_ahmed_webdeveloper_resume.pdf"
 };
 
 export default contact;
