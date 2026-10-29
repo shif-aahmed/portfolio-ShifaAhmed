@@ -4,12 +4,21 @@ import worldcontech from "../assets/worldcontech.png";
 import kyakhao from "../assets/kyakhao.png";
 import vertexai from "../assets/vertexai.png";
 import spinwheel from "../assets/spinwheel.png";
-
+import ticketGo from "../assets/ticketGo.png";
 import aetherionCoin from "../assets/aetherionCoin.png";
 
 const projects = [
   {
     id: 1,
+    title: "Ticket Management System",
+    description: "TicketGo is a full-stack ticket management and helpdesk platform featuring role-based access control for administrators, agents, and employees, ticket creation and assignment, status and priority tracking, team management, notifications, and REST API integration with a PostgreSQL database.",
+    techStack: "Next.js, TypeScript, Tailwind CSS, NestJS, Prisma ORM, PostgreSQL",
+    image: ticketGo,
+    live: "https://ticket-management-system-ecru-beta.vercel.app/",
+    github: "https://github.com/shif-aahmed/ticket-mnagement-system-frontend",
+  },
+  {
+    id: 2,
     title: "Worldcon Tech Services",
     description: "A responsive frontend website for a telecommunications service provider, built to showcase internet, TV, and mobile service offerings. The website features a clean, modern UI with responsive layouts, animated Vanta.js background effects, promotional sections, and click-to-call CTAs for an engaging user experience.",
     techStack: "HTML, CSS, JavaScript, Vanta.js",
@@ -18,7 +27,7 @@ const projects = [
     github: "https://github.com/shif-aahmed/worldcontechservices",
   },
   {
-    id: 2,
+    id: 3,
     title: "KyaKhao",
     description: "Kya Khao is a React-based food ordering and restaurant discovery platform featuring online food ordering, restaurant seat reservations, REST API integration, and AI-powered personalized food and restaurant recommendations.",
     techStack: "React.js, CSS3, REST APIs",
@@ -27,7 +36,7 @@ const projects = [
     github: "https://github.com/shif-aahmed/kyakhao",
   },
   {
-    id: 3,
+    id: 4,
     title: "VertexAI",
     description: "A responsive company website built with React.js and CSS, featuring dynamic Career and Blog sections powered by Node.js, Express.js, and MongoDB for backend functionality and data management.",
     techStack: "React.js, Node.js, Express.js, MongoDB, HTML5, CSS3",
@@ -37,7 +46,7 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Spin Wheel",
     description: "A responsive React.js spin wheel application with name management, file import, saved lists, and random winner selection, designed with CSS for a smooth experience across desktop and mobile devices.",
     techStack: "React.js, CSS3, JavaScript, HTML5",
@@ -46,7 +55,7 @@ const projects = [
     github: "https://github.com/shif-aahmed/spinWheel",
   },
   {
-    id: 5,
+    id: 6,
     title: "Aetherion Coin",
     description: "A modern decentralized finance platform designed to showcase a community-driven crypto ecosystem. Built with React and Bootstrap, the website features a responsive interface, clean layouts, interactive elements, and engaging sections for presenting the platform and its digital ecosystem.",
     techStack: "React.js, Bootstrap, JavaScript, HTML5, CSS3",
